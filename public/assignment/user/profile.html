@@ -1,10 +1,13 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="viewport" content="initial-scale=1.25, user-scalable = no">
         <meta charset="utf-8">
         <title>Title</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="css/style.css" rel="stylesheet"/>
+        <link href="../css/style.css" rel="stylesheet"/>
     </head>
 
     <body>
@@ -12,7 +15,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">
-                        Fixed Top
+                        Profile
                     </a>
                     <p class="navbar-text pull-right">
                         <a href="#" class="navbar-link">
@@ -24,7 +27,11 @@
             </div>
         </nav>
         <div class="container">
-            <h1>Profile</h1>
+
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Success!</strong> Your profile was saved.
+            </div>
 
             <form>
                 <div class="form-group">
@@ -46,7 +53,7 @@
             </form>
 
             <a class="btn btn-primary btn-block"
-               href="website-list.html">Websites</a>
+               href="/assignment/website/websitelist.html">Websites</a>
             <a class="btn btn-danger btn-block"
                href="login.html">Logout</a>
         </div>
