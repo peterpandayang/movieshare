@@ -3,10 +3,16 @@ input.form-control{
 }
 
 body{
-    padding-top: 60px;
+    /*this is the space inside the body box model*/
+    padding-top: 54px;
     font-size: 12px;
 }
 
 p.navbar-text.pull-right{
+    /*this pull-right is where we put the "+" mark on the right top of the page for the class p*/
     margin-right: 15px;
+}
+
+p.navbar-text.pull-left{
+    margin-left: 15px;
 }

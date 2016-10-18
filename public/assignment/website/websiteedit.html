@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <!--these three meta tags are for apple iphone-->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="viewport" content="initial-scale=1.25, user-scalable = no">
@@ -14,52 +15,49 @@
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <!--this is inside a header-->
+                    <p class="navbar-text pull-left">
+                        <a href="websitelist.html" class="navbar-link">
+                      <span class="glyphicon glyphicon-chevron-left">
+                      </span>
+                        </a>
+                    </p>
                     <a class="navbar-brand" href="#">
-                        Profile
+                        Edit Website
                     </a>
                     <p class="navbar-text pull-right">
-                        <a href="#" class="navbar-link">
-                            <!--we could also change the icon here-->
-              <!--<span class="glyphicon glyphicon-plus">-->
-              <span class="glyphicon glyphicon-ok">
-              </span>
+                        <a href="websitelist.html" class="navbar-link">
+                      <span class="glyphicon glyphicon-ok">
+                      </span>
                         </a>
                     </p>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <!--we could change warning to success here-->
-            <!--<div class="alert alert-warning alert-dismissible" role="alert">-->
-            <div class="alert alert-success alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <strong>Success!</strong> Your profile was saved.
-            </div>
 
             <form>
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Username">
+                    <label for="website-name">Website Name</label>
+                    <input type="text"
+                           class="form-control"
+                           id="website-name"
+                           value="Apple"
+                           placeholder="Google">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="alice@wonderland">
+                    <label for="website-description">Website Description</label>
+                    <textarea rows="4"
+                              id="website-description"
+                              class="form-control"
+                              placeholder="Description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    </textarea>
                 </div>
-                <div class="form-group">
-                    <label for="first-name">First Name</label>
-                    <input type="text" class="form-control" id="first-name" placeholder="Alice">
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" class="form-control" id="last-name" placeholder="Wonderland ">
-                </div>
+
             </form>
 
-            <a class="btn btn-primary btn-block"
-               href="/assignment/website/websitelist.html">Websites</a>
+
             <a class="btn btn-danger btn-block"
-               href="login.html">Logout</a>
+               href="websitelist.html">Delete</a>
         </div>
 
         <nav class="navbar navbar-default navbar-fixed-bottom">
